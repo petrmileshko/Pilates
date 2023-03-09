@@ -42,7 +42,7 @@
 }
 
 *:focus:not(:active) {
-  outline: 1px solid tomato;
+  outline: 1px solid rgb(90, 88, 87);
   outline-offset: 2px;
 }
 
