@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Mileshko Peter">
-  <meta name="description" content="Cтудия Пилатеса. Верстка по макету в формате jpg. Версия для десктоп">
+  <meta name="description" content="Cтудия Пилатеса. Семантическая разметка по макету в jpg.">
   <meta name="copyright" content="HTML академия">
   <meta name="viewport" content="width=device-width">
   <!-- <link rel="stylesheet" href="css/styles.css"> -->
@@ -16,22 +16,22 @@
 <body class="page flex_column">
 
   <header class="page__header flex_row">
-    <a href="" class="logo bg__green">
-      <img class="logo__image" src="images/logo.svg" width="68" height="52" alt="Логотип студии Пилатес.">
-      <!-- <span class="visually-hidden">Переход на главную страницу</span> -->
-    </a>
     <nav class="navigation">
       <!-- <h2 class="visually-hidden">Главная навигация по сайту</h2> -->
+      <a href="" class="logo bg__green">
+        <img class="logo__image" src="images/logo.svg" width="68" height="52" alt="Логотип студии Пилатес.">
+        <!-- <span class="visually-hidden">Переход на главную страницу</span> -->
+      </a>
       <ul class="menu list flex_row">
         <li class="menu__item"><a class="menu_link" href="#about">О нас</a></li>
         <li class="menu__item"><a class="menu_link" href="schedule.html">Расписание</a></li>
         <li class="menu__item"><a class="menu_link" href="#tariffs">Стоимость</a></li>
         <li class="menu__item"><a class="menu_link" href="#testimonials">Отзывы</a></li>
       </ul>
+      <address class="contacts">
+        <a class="contacts__phone" href="tel:+79183650707">+7 918 365 07 07</a>
+      </address>
     </nav>
-    <address class="contacts">
-      <a class="contacts__phone" href="tel:+79183650707">+7 918 365 07 07</a>
-    </address>
   </header>
 
   <main class="main page__content">
@@ -39,7 +39,7 @@
     <section class="hero">
       <h2 class="visually-hidden">Поразительные результаты уже после нескольких занятий</h2>
       <img class="hero__img" src="images/athletic-body.png" width="994" height="776"
-      alt="Девушка занимающаяся гимнастикой Пилатес.">
+        alt="Девушка занимающаяся гимнастикой Пилатес.">
       <p class="hero__text">Твоё здоровое тело через 10 занятий</p>
       <a class="button hero__link" href="schedule.html">Смотреть расписание</a>
     </section>
