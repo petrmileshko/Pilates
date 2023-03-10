@@ -7,26 +7,26 @@
   <meta name="description" content="Cтудия Пилатеса. Верстка по макету в формате jpg. Версия для десктоп">
   <meta name="copyright" content="HTML академия">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <link rel="stylesheet" href="css/outline.css">
   <link rel="icon" type="img/png" sizes="16x16" href="images/favicon.png">
   <title>Новости культуры</title>
 </head>
 
 <body class="page flex_column">
-  <h1 class="visually-hidden">Студия фитнеса - Пилатес</h1>
 
-  <header class="page__header">
-    <a href="" class="logo">
-      <img class="logo__image" src="" alt="">
-      <span class="visually-hidden"></span>
+  <header class="page__header flex_row">
+    <a href="" class="logo bg__green">
+      <img class="logo__image" src="images/logo.svg" width="68" height="52" alt="Логотип студии Пилатес.">
+      <!-- <span class="visually-hidden">Переход на главную страницу</span> -->
     </a>
     <nav class="navigation">
-      <h2 class="visually-hidden">Главная навигация по сайту</h2>
-      <ul class="menu">
-        <li class="menu__item"><a class="menu_link" href=""></a></li>
-        <li class="menu__item"><a class="menu_link" href=""></a></li>
-        <li class="menu__item"><a class="menu_link" href=""></a></li>
-        <li class="menu__item"><a class="menu_link" href=""></a></li>
+      <!-- <h2 class="visually-hidden">Главная навигация по сайту</h2> -->
+      <ul class="menu list flex_row">
+        <li class="menu__item"><a class="menu_link" href="#about">О нас</a></li>
+        <li class="menu__item"><a class="menu_link" href="schedule.html">Расписание</a></li>
+        <li class="menu__item"><a class="menu_link" href="#tariffs">Стоимость</a></li>
+        <li class="menu__item"><a class="menu_link" href="#testimonials">Отзывы</a></li>
       </ul>
     </nav>
     <address class="contacts">
@@ -35,75 +35,157 @@
   </header>
 
   <main class="main page__content">
-
+    <h1 class="hero__heading">Студия пилатеса</h1>
     <section class="hero">
-      <h2 class="hero__heading"></h2>
-      <p class="hero__text"></p>
-      <a class="button hero__link" href=""></a>
-      <img class="hero__img" src="" alt="">
+      <h2 class="visually-hidden">Поразительные результаты уже после нескольких занятий</h2>
+      <img class="hero__img" src="images/athletic-body.png" width="994" height="776"
+      alt="Девушка занимающаяся гимнастикой Пилатес.">
+      <p class="hero__text">Твоё здоровое тело через 10 занятий</p>
+      <a class="button hero__link" href="schedule.html">Смотреть расписание</a>
     </section>
 
-    <section class="section about">
-      <h2 class="section__heading"></h2>
-      <p class="about__text"></p>
-      <a href="" class="about__more link"></a>
-      <img class="about__image" src="" alt="">
+    <section class="section about" id="about">
+      <h2 class="section__heading">О пилатесе</h2>
+      <p class="about__text">Пилатес соединяет элементы растяжки с элементами силовой тренировки
+        Комплекс упражнений укрепляет мышцы пресса и спины, улучшает гибкость мышц и связок, подвижность суставов и
+        избавляет от дискомфорта в позвоночнике</p>
+      <a href="" class="about__more link">Подробнее</a>
+      <img class="about__image" src="images/pilates-studio-photo.png" width="855" height="630" alt="Занятие в студии.">
     </section>
 
-    <section class="section tariffs">
-      <h2 class="section__heading"></h2>
+    <section class="section tariffs" id="tariffs">
+      <h2 class="section__heading">Тарифы</h2>
       <ol class="list tariff">
         <li class="list__item">
-          <h3 class="tariff__name"></h3>
-          <p class="tarriff__price"></p>
-          <a class="button tarrif__link" href=""></a>
+          <h3 class="tariff__name">
+            <span>Уровень</span>
+            Новичок
+          </h3>
+          <p class="tarriff__price">
+            150 руб. / занятие
+          </p>
+          <a class="button tarrif__link" href="index.html">
+            Записаться
+            <span class="visually-hidden">на уровень «Новичок»</span>
+          </a>
         </li>
         <li class="list__item">
-          <h3 class="tariff__name"></h3>
-          <p class="tarriff__price"></p>
-          <a class="button tarrif__link" href=""></a>
+          <h3 class="tariff__name">
+            <span>Уровень</span>
+            Профи
+          </h3>
+          <p class="tarriff__price">
+            200 руб. / занятие
+          </p>
+          <a class="button tarrif__link" href="index.html">
+            Записаться
+            <span class="visually-hidden">на уровень «Профи»</span>
+          </a>
         </li>
         <li class="list__item">
-          <h3 class="tariff__name"></h3>
-          <p class="tarriff__price"></p>
-          <a class="button tarrif__link" href=""></a>
+          <h3 class="tariff__name">
+            <span>Уровень</span>
+            Мастер
+          </h3>
+          <p class="tarriff__price">
+            350 руб. / занятие
+          </p>
+          <a class="button tarrif__link" href="index.html">
+            Записаться
+            <span class="visually-hidden">на уровень «Мастер»</span>
+          </a>
         </li>
       </ol>
     </section>
 
-    <section class="section testimonials">
-      <h2 class="section__heading"></h2>
+    <section class="section testimonials" id="testimonials">
+      <h2 class="section__heading">Отзывы</h2>
       <ul class="list">
         <li class="list__item">
-          <img class="image" src="" alt="">
-          <blockquote class="msg"></blockquote>
+          <blockquote class="feedback">
+            <p class="user feedback__meta">
+              <img class="user__photo" src="images/user001.jpg" width="150" height="150"
+                alt="Фото портрет Вероники Кулешовой.">
+              <span class="user__name">Вероника Кулешова</span>
+              <span class="user__age">25 лет</span>
+            </p>
+            <p class="feedback__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увидела результат: тело
+              подтянулось, улучшилась осанка, появился пресс. И самое главное, пропал сильный изгиб поясничного отдела,
+              который меня очень беспокоил.</p>
+          </blockquote>
         </li>
         <li class="list__item">
-          <img class="image" src="" alt="">
-          <blockquote class="msg"></blockquote>
+          <blockquote class="feedback">
+            <p class="user feedback__meta">
+              <img class="user__photo" src="images/user010.jpg" width="150" height="150"
+                alt="Фото портрет Надежды Петровой.">
+              <span class="user__name">Надежда Петрова</span>
+              <span class="user__age">23 лет</span>
+            </p>
+            <p class="feedback__text">Начала заниматься пилатесом по достаточно банальной причине – хотелось
+              поддерживать хорошую форму, и не ездить на занятия далеко от дома. занятие пилатесом с инвентарем Зал
+              пилатеса был буквально через дорогу, поэтому и записалась туда.</p>
+          </blockquote>
         </li>
         <li class="list__item">
-          <img class="image" src="" alt="">
-          <blockquote class="msg"></blockquote>
+          <blockquote class="feedback">
+            <p class="user feedback__meta">
+              <img class="user__photo" src="images/user107.jpg" width="150" height="150"
+                alt="Фото портрет Оксаны Тодоренко.">
+              <span class="user__name">Оксана Тодоренко</span>
+              <span class="user__age">19 лет</span>
+            </p>
+            <p class="feedback__text">У меня был печальный опыт занятий пилатесом, связанный с некомпетентностью
+              инструктора, который проводил тренировки. Я занималась пилатесом 2 месяца, а потом забросила.</p>
+          </blockquote>
         </li>
       </ul>
     </section>
   </main>
-  <footer class="page__footer">
-    <p class="copyright">
 
+  <footer class="page__footer flex_row bg__green">
+    <p class="copyright">
+      Pilates Plus, 2017 ©
     </p>
 
     <a href="" class="logo">
-      <img class="logo__image" src="" alt="">
-      <span class="visually-hidden"></span>
+      <img class="logo__image" src="images/logo.svg" width="68" height="52" alt="Логотип студии Пилатес.">
+      <span class="visually-hidden">Переход на главную страницу</span>
     </a>
 
     <section class="section socials">
-      <ul class="socials__list">
-        <li class="socials__item"><a href="" class="socials__link"></a></li>
-        <li class="socials__item"><a href="" class="socials__link"></a></li>
-        <li class="socials__item"><a href="" class="socials__link"></a></li>
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="socials__list list flex_row">
+        <li class="socials__item">
+          <a class="socials__link" href="https://vk.com/">
+            <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+              width="25" height="14" viewBox="0 0 799.72 452.69">
+              <path
+                d="M688.5 287.85c26.54 25.9 54.55 50.28 78.35 78.8 10.51 12.67 20.47 25.75 28.08 40.46 10.79 20.9 1.02 43.92-17.73 45.16l-116.55-.05c-30.05 2.5-54.03-9.6-74.2-30.16-16.13-16.43-31.07-33.92-46.6-50.91-6.36-6.94-13.01-13.48-20.97-18.64-15.9-10.33-29.72-7.17-38.8 9.42-9.26 16.88-11.36 35.57-12.27 54.38-1.25 27.44-9.55 34.66-37.11 35.91-58.92 2.78-114.83-6.13-166.77-35.85-45.8-26.2-81.3-63.19-112.2-105.06C91.54 229.78 45.45 140.2 4.03 48.08c-9.32-20.74-2.5-31.88 20.4-32.28 38.01-.74 76.03-.69 114.1-.05 15.44.22 25.67 9.09 31.64 23.68 20.57 50.58 45.74 98.7 77.33 143.3 8.42 11.88 17 23.75 29.21 32.11 13.52 9.26 23.8 6.19 30.17-8.87 4.03-9.54 5.8-19.82 6.7-30.05 3.02-35.17 3.42-70.29-1.86-105.34-3.25-21.87-15.57-36.04-37.4-40.18-11.14-2.11-9.48-6.25-4.09-12.61C279.61 6.83 288.42 0 305.98 0H437.7c20.73 4.1 25.34 13.4 28.18 34.27l.1 146.3c-.22 8.08 4.04 32.05 18.6 37.4 11.64 3.8 19.31-5.52 26.3-12.9 31.53-33.47 54.04-73.02 74.15-113.98 8.92-18 16.6-36.71 24.03-55.4 5.5-13.87 14.15-20.69 29.77-20.39l126.77.12a66.87 66.87 0 0 1 11.2.67c21.36 3.64 27.21 12.83 20.62 33.69-10.4 32.73-30.62 60-50.4 87.4-21.15 29.25-43.75 57.5-64.72 86.92-19.26 26.87-17.73 40.41 6.2 63.75z"
+                fill-rule="evenodd" /></svg>
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.facebook.com/htmlacademy/">
+            <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+              width="10" height="20" viewBox="0 0 49 96">
+              <path data-name="Forma 1"
+                d="M50 15.94h-9.06c-7.1 0-8.48 3.36-8.48 8.3v10.9H49.4v17.07H32.45V96H14.78V52.21H0V35.14h14.78V22.56C14.78 7.96 23.73 0 36.79 0L50 .02v15.91z"
+                fill-rule="evenodd" /></svg>
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="https://www.instagram.com/htmlacademy/">
+            <svg class="socials__icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+              width="17" height="17" viewBox="0 0 97 97">
+              <path data-name="Forma 1"
+                d="M12.45 0h72.1A12.16 12.16 0 0 1 97 12.45v72.1A12.16 12.16 0 0 1 84.55 97h-72.1A12.16 12.16 0 0 1 0 84.55v-72.1A12.16 12.16 0 0 1 12.45 0zm58.21 10.77a4.38 4.38 0 0 0-4.36 4.37V25.6a4.38 4.38 0 0 0 4.37 4.37h10.96a4.38 4.38 0 0 0 4.36-4.37V15.14a4.38 4.38 0 0 0-4.36-4.37H70.66zm15.38 30.25H77.5a28.39 28.39 0 0 1 1.25 8.32c0 16.14-13.5 29.22-30.16 29.22S18.44 65.48 18.44 49.34a28.33 28.33 0 0 1 1.25-8.32h-8.91V82a3.87 3.87 0 0 0 3.85 3.86h67.55A3.87 3.87 0 0 0 86.05 82V41.02zm-37.45-11.6c-10.76 0-19.48 8.44-19.48 18.87s8.72 18.88 19.48 18.88 19.48-8.46 19.48-18.88S59.36 29.4 48.6 29.4z"
+                fill-rule="evenodd" /></svg>
+            <span class="visually-hidden">Инстаграмм</span>
+          </a>
+        </li>
       </ul>
     </section>
   </footer>
