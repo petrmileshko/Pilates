@@ -40,6 +40,10 @@
   text-decoration: none;
 }
 
+*[class$="link"]:hover {
+  box-shadow: 0 0 6px 4px #eaefdf;
+}
+
 *[class$="heading"],
 *[class$="text"] {
   margin: 0;
@@ -68,6 +72,7 @@
 }
 
 .button {
+  position: relative;
   padding: 20px;
   padding-left: 45px;
   color: #ffffff;
@@ -75,6 +80,19 @@
   border: 1px solid #ffffff;
   border-radius: 45px;
 }
+
+.button::after {
+  position: absolute;
+  top: 42%;
+  right: -34px;
+  width: 70px;
+  height: 10px;
+  background-image: url("../images/arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
 /* Настройка сетки страниц паттерн  - "flex one column, sticky footer" */
 .site {
   height: 100%;
