@@ -62,12 +62,12 @@
     <section class="section tariffs" id="tariffs">
       <h2 class="section__heading heading">Тарифы</h2>
       <ul class="list tariff">
-        <li class="list__item">
+        <li class="list__item tariff__first">
           <h3 class="tariff__name">
             <span>Уровень</span>
             Новичок
           </h3>
-          <p class="tarriff__price">
+          <p class="tarriff__price text">
             150 руб. / занятие
           </p>
           <a class="button tarrif__link" href="index.html">
@@ -75,12 +75,12 @@
             <span class="visually-hidden">на уровень «Новичок»</span>
           </a>
         </li>
-        <li class="list__item">
+        <li class="list__item tariff__second">
           <h3 class="tariff__name">
             <span>Уровень</span>
             Профи
           </h3>
-          <p class="tarriff__price">
+          <p class="tarriff__price text">
             200 руб. / занятие
           </p>
           <a class="button tarrif__link" href="index.html">
@@ -88,12 +88,12 @@
             <span class="visually-hidden">на уровень «Профи»</span>
           </a>
         </li>
-        <li class="list__item">
+        <li class="list__item tariff__third">
           <h3 class="tariff__name">
             <span>Уровень</span>
             Мастер
           </h3>
-          <p class="tarriff__price">
+          <p class="tarriff__price text">
             350 руб. / занятие
           </p>
           <a class="button tarrif__link" href="index.html">
@@ -106,15 +106,15 @@
 
     <section class="section testimonials" id="testimonials">
       <h2 class="section__heading heading">Отзывы</h2>
-      <ul class="list">
+      <ul class="list testimonial">
         <li class="list__item">
           <blockquote class="feedback">
             <img class="user__photo" src="images/user001.jpg" width="150" height="150"
               alt="Фото портрет Вероники Кулешовой.">
-            <cite class="user__name">Вероника Кулешова</cite>
-            <p class="user__age">25 лет</p>
+            <b class="user__name">Вероника Кулешова</b> <!-- Испоьзовать тег <cite> на именах личностей не следует согласно специвикациии-->
+            <p class="user__age text">25 лет</p>
             <p class="feedback__text">Хожу на пилатес уже пять месяцев. После десяти занятий уже увидела результат: тело
-              подтянулось, улучшилась осанка, появился пресс. И самое главное, пропал сильный изгиб поясничного отдела,
+              подтянулось, улучшилась осанка, появился пресс.<br> И самое главное, пропал сильный изгиб поясничного отдела,
               который меня очень беспокоил.</p>
           </blockquote>
         </li>
@@ -122,19 +122,19 @@
           <blockquote class="feedback">
             <img class="user__photo" src="images/user010.jpg" width="150" height="150"
               alt="Фото портрет Надежды Петровой.">
-            <cite class="user__name">Надежда Петрова</cite>
-            <p class="user__age">23 года</p>
+            <b class="user__name">Надежда Петрова</b>
+            <p class="user__age text">23 года</p>
             <p class="feedback__text">Начала заниматься пилатесом по достаточно банальной причине – хотелось
               поддерживать хорошую форму, и не ездить на занятия далеко от дома. занятие пилатесом с инвентарем Зал
               пилатеса был буквально через дорогу, поэтому и записалась туда.</p>
           </blockquote>
         </li>
-        <li class="list__item">
+        <li class="list__item feedback_third">
           <blockquote class="feedback">
             <img class="user__photo" src="images/user107.jpg" width="150" height="150"
               alt="Фото портрет Оксаны Тодоренко.">
-            <cite class="user__name">Оксана Тодоренко</cite>
-            <p class="user__age">19 лет</p>
+            <b class="user__name">Оксана Тодоренко</b>
+            <p class="user__age text">19 лет</p>
             <p class="feedback__text">У меня был печальный опыт занятий пилатесом, связанный с некомпетентностью
               инструктора, который проводил тренировки. Я занималась пилатесом 2 месяца, а потом забросила.</p>
           </blockquote>
@@ -148,7 +148,7 @@
       Pilates Plus, 2017 ©
     </p>
 
-    <a class="logo" href="index.html">
+    <a class="logo logo_footer" href="index.html">
       <img class="logo__image" src="images/logo.svg" width="68" height="52" alt="Логотип студии Пилатес.">
     </a>
 
