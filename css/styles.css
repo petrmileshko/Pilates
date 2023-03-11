@@ -240,6 +240,7 @@
 .about {
   min-height: 650px;
   position: relative;
+  margin-bottom: 186px;
   background-image: url("../images/dots.png");
   background-repeat: no-repeat;
   background-position: 525px 320px;
@@ -310,4 +311,32 @@
 
 .about__more::after {
   transform: rotate(-45deg) translate(3px,7px);
+}
+
+/* Секция Тарифы */
+
+.tariffs > .section__heading {
+  margin-bottom: 60px;
+  letter-spacing: -1.5px;
+}
+
+.tariff {
+  display: grid;
+  grid-template-columns: repeat(3,375px);
+  column-gap: 20px;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 165px 40px 105px 70px;
+}
+
+.list__item:first-child {
+
+}
+
+.tariff__name {
+  display: flex;
+  flex-direction: column;
 }
